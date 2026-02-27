@@ -1,0 +1,23 @@
+.todo {
+  background-color: antiquewhite;
+  height: 80vh;
+  width: 50vw;
+  padding-top: 5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  border-radius: 2rem;
+}
+#task-input {
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  width: 50%;
+  margin-left: 7rem;
+}
+#addTaskBtn {
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  width: 10rem;
+  margin-left: 1rem;
+}
