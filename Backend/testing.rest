@@ -1,0 +1,11 @@
+GET http://localhost:5001/task
+
+
+###
+POST http://localhost:5001/task
+Content-Type: application/json
+
+
+{
+    "taskText":"Testing creating a task"
+}

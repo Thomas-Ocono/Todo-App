@@ -19,32 +19,7 @@ const connectToDB = async () => {
 
 connectToDB();
 
-const testSchema = new mongoose.Schema({
-  user: {
-    type: String,
-    required: true,
-  },
-  text: {
-    type: String,
-    required: true,
-  },
-});
-
-const testModel = new mongoose.model("test", testSchema);
-
-const testing = async () => {
-  const savingTest = new testModel({
-    user: "Micheal Jackson",
-    text: "Greatest musician Yeetle deetle with a beetle",
-  });
-  try {
-    await savingTest.save();
-    console.log("data added!");
-  } catch (error) {
-    console.log(error);
-    console.log("Error saving data");
-  }
-};
+app.use(express.json());
 
 app.use("/task", taskRoutes);
 
