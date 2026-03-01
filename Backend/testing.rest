@@ -7,5 +7,7 @@ Content-Type: application/json
 
 
 {
-    "taskText":"Testing creating a task"
+    "user":"Tom",
+    "category":"Test",
+    "taskText":"Testing creating and getting tasks :D"
 }
