@@ -8,6 +8,14 @@ Content-Type: application/json
 
 {
     "user":"Tom",
-    "category":"Test",
-    "taskText":"Testing creating and getting tasks :D"
+    "category":"Yeet",
+    "taskText":"Test Deletin"
+}
+
+###
+DELETE http://localhost:5001/task
+Content-Type: application/json
+
+{
+    "_id":"69a655ccb2ced5d742152566"
 }
