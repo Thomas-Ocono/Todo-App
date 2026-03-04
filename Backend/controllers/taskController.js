@@ -4,6 +4,7 @@ export const getAllTask = async (req, res) => {
   try {
     const allTasks = await taskModel.find();
     console.log(allTasks);
+    res.json(allTasks);
   } catch (error) {
     console.log(error);
     console.log("Error getting all tasks");
