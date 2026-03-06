@@ -28,7 +28,19 @@ export const createTask = async (req, res) => {
   }
 };
 
-export const updateTask = async (req, res) => {};
+export const updateTask = async (req, res) => {
+  try {
+    const taskId = req.body._id;
+    const foundTask = await taskModel.find({ _id: taskId });
+    if (foundTask[0] == null) {
+      console.log("Task not found");
+      res.json({ message: "Task not found?" });
+    }
+  } catch (error) {
+    console.log(error);
+    console.log("Error updating task");
+  }
+};
 
 export const deleteTask = async (req, res) => {
   try {

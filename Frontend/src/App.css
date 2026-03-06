@@ -2,11 +2,3 @@
   margin: 0;
   padding: 0;
 }
-
-.wholeApp {
-  display: flex;
-  flex-direction: row;
-  background-color: dimgrey;
-  height: 100vh;
-  width: 100vw;
-}
